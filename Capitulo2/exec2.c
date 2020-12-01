@@ -18,7 +18,7 @@ int main(void)
     float fPrecoGalaoGasolinaUSA;
     float fTaxaConversaoUSA;
     float fPrecoLitroGasolinaBRL;
-    const float iLitrosPorGalao = 3.7854f;
+    const float fLitrosPorGalao = 3.7854f;
 
     /* Capturando dados do teclado */
     printf("Digite o preco do galao de gasolina no USA: ");
@@ -27,7 +27,7 @@ int main(void)
     scanf("%f", &fTaxaConversaoUSA);
     
     /* Processando preço por litro no Brasil */
-    fPrecoLitroGasolinaBRL = (fPrecoGalaoGasolinaUSA * fTaxaConversaoUSA) / iLitrosPorGalao;
+    fPrecoLitroGasolinaBRL = (fPrecoGalaoGasolinaUSA * fTaxaConversaoUSA) / fLitrosPorGalao;
 
     /* Exibindo o resultado */
     printf("O preco do litro de gasolina no Brasil e: %.3f", fPrecoLitroGasolinaBRL);
