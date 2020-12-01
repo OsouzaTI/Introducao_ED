@@ -1,0 +1,12 @@
+C = 2
+E = 1
+libs = libs/*.c
+file = Capitulo$(C)/exec$(E).c
+output = release/output
+
+build:
+	gcc -Wfatal-errors -std=c99 $(file) $(libs) -o $(output)
+
+run:
+	$(output).exe
+    
