@@ -80,7 +80,7 @@ int main(void)
 	scanf("%d", &iValor2);
 	/*
 		verifica se o valor 2 é maior que o maior valor
-		até o momento, e cado for, será feita a troca do
+		até o momento, e caso for, será feita a troca do
 		maior valor, e assim será feito até a 3 entrada.
 	*/
 	if(iValor2 > iMaiorValor) iMaiorValor = iValor2;
