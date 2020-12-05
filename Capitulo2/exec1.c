@@ -2,7 +2,7 @@
     Algorithm: Volume Esférico
     Author: Ozéias Souza
     Data: 30/11/2020
-    Hour:  13:41:09
+    Hours:  13:41:09
     Book: Introdução A Estrutura de dados com técnicas de programação em C
     About Code: Dado um valo do raio calcular o volume
     Inputs: Float -> Raio da esfera

@@ -2,7 +2,7 @@
     Algorithm: Conversor de Temperatura em Graus Celsius para Graus Fahrenheit
     Author: Ozéias Souza
     Data: 30/11/2020
-    Hour:  12:49:08
+    Hours:  12:49:08
     Book: Introdução A Estrutura de dados com técnicas de programação em C
     About Code: Um simples conversor de temperaturas para fins didáticos
     Inputs: Float -> Temperatura em C

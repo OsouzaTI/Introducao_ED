@@ -2,7 +2,7 @@
     Algorithm: Gasolina/l no brasil
     Author: Ozéias Souza
     Data: 01/12/2020
-    Hour:  17:06:49
+    Hours:  17:06:49
     Book: Introdução A Estrutura de dados com técnicas de programação em C
     About Code: Se a gasolina fosse o mesmo valor cobrado nos USA
     Inputs: 
