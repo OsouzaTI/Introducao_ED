@@ -17,7 +17,7 @@
         na compactação dos códigos escritos, esse arquivo contém mais de 100
         linhas para coisas simples como mostrar uma sequência de 3 números em
         ordem crescente, apesar que essa praticidade tem um custo um pouco maior
-        do se se fosse feito apenas com ifs.
+        do se fosse feito apenas com ifs.
 */
 #include <stdio.h> // Biblioteca padrão da linguagem C
 #include <locale.h> // Biblioteca para mudar o padrão de caracteres
@@ -85,7 +85,7 @@ int main(void)
         printf("%d %d %d", iNumero1, iNumero3, iNumero2);    
 
     printf("\nSolução 2\n");
-    
+
     /* 
         Solução 2:
             Estrutura de ifs aninhados
