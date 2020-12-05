@@ -1,16 +1,16 @@
 /*
     Algorithm: Converter Radianos
-    Author: Oz√©ias Souza
+    Author: OzÈias Souza
     Data: 01/12/2020
     Hours:  20:49:40
-    Book: Introdu√ß√£o A Estrutura de dados com t√©cnicas de programa√ß√£o em C
+    Book: IntroduÁ„o A Estrutura de dados com tÈcnicas de programaÁ„o em C
     About Code: Recebendo um valor em radianos, a saida deve ser em graus, minutos e segundos
     Inputs: 
     Outputs: 
     Observations: 
 */
 
-#include <stdio.h> // Biblioteca padr√£o da linguagem C
+#include <stdio.h> // Biblioteca padr„o da linguagem C
 int main(void)
 {
     const float fRadianosGraus = 57.29578f;

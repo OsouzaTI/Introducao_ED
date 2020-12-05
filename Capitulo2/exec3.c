@@ -1,15 +1,15 @@
 /*
     Algorithm: Segundos Transcorridos
-    Author: Oz√©ias Souza
+    Author: OzÈias Souza
     Data: 01/12/2020
     Hours:  17:53:07
-    Book: Introdu√ß√£o A Estrutura de dados com t√©cnicas de programa√ß√£o em C
-    About Code: Ser√° capturado o numeros de segundos transcorridos em um evento
+    Book: IntroduÁ„o A Estrutura de dados com tÈcnicas de programaÁ„o em C
+    About Code: Ser· capturado o numeros de segundos transcorridos em um evento
     Inputs: Int -> Tempo em segundos transcorridos
     Outputs: Char* -> Texto no formato Hora-Minuto-Segundo
-    Observations: Dever√° conter zeros a esquerda    
+    Observations: Dever· conter zeros a esquerda    
 */
-#include <stdio.h> // Biblioteca padr√£o da linguagem C
+#include <stdio.h> // Biblioteca padr„o da linguagem C
 int main(void)
 {
     int iTempoTranscorrido;
@@ -21,7 +21,7 @@ int main(void)
     printf("Digite o tempo total do evento: ");
     scanf("%d", &iTempoTranscorrido);
 
-    /* Vers√£o sem refatora√ß√£o */
+    /* Vers„o sem refatoraÁ„o */
     {
         iHoras   = iTempoTranscorrido / (int)fSegundosHora;       
         iMinutos = ((iTempoTranscorrido / fSegundosHora) - iHoras) * 60;
@@ -29,15 +29,15 @@ int main(void)
         printf("%02d:%02d:%02d", iHoras, iMinutos, iSegundos);
     }
     printf("\n");
-    /* Vers√£o Refatorada */
+    /* Vers„o Refatorada */
     {
-        /* Auxiliar recebe o tempo transcorrido e √© convertido para horas */
+        /* Auxiliar recebe o tempo transcorrido e È convertido para horas */
         aux  = iTempoTranscorrido / fSegundosHora; 
         /* iHoras recebe o valor de aux truncado pegando somente a parte decimal */
         iHoras = (int)aux;
-        /* √© subtraida de aux as Horas restando somente os minutos n√£o convertidos */
+        /* È subtraida de aux as Horas restando somente os minutos n„o convertidos */
         aux -= iHoras;
-        /* Convers√£o dos minutos */
+        /* Convers„o dos minutos */
         aux *= 60;
         /* Mesmo processo de antes */
         iMinutos = (int)aux;

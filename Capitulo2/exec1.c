@@ -1,14 +1,14 @@
 /*
-    Algorithm: Volume Esf√©rico
-    Author: Oz√©ias Souza
+    Algorithm: Volume EsfÈrico
+    Author: OzÈias Souza
     Data: 30/11/2020
     Hours:  13:41:09
-    Book: Introdu√ß√£o A Estrutura de dados com t√©cnicas de programa√ß√£o em C
+    Book: IntroduÁ·o A Estrutura de dados com tÈcnicas de programaÁ·o em C
     About Code: Dado um valo do raio calcular o volume
     Inputs: Float -> Raio da esfera
     Outputs: Float -> Volume
 */
-#include <stdio.h> // Biblioteca padr√£o da linguagem C
+#include <stdio.h> // Biblioteca padr·o da linguagem C
 #include "../libs/math.h"
 
 int main(void)
@@ -25,7 +25,7 @@ int main(void)
     r = potencia(r, 3);
 
     /* Processamento do volume */
-    v = 4 / 3.0 * PI * r; // Caso importante: Divis√£o retornar√° 0 se n√£o usar o ".0"
+    v = 4 / 3.0 * PI * r; // Caso importante: Divis„o retornar· 0 se n·o usar o ".0"
 
 
     printf("O volume da esfera : %.3f", v);

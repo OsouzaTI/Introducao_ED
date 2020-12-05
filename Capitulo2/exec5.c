@@ -1,15 +1,15 @@
 /*
-    Algorithm: C√©dulas
-    Author: Oz√©ias Souza
+    Algorithm: CÈdulas
+    Author: OzÈias Souza
     Data: 02/12/2020
     Hours:  20:36:37
-    Book: Introdu√ß√£o A Estrutura de dados com t√©cnicas de programa√ß√£o em C
+    Book: IntroduÁ„o A Estrutura de dados com tÈcnicas de programaÁ„o em C
     About Code: Calcular montante
     Inputs: Float -> Montante
     Outputs: Char** -> Valor correspondente em notas
     Observations: Notas de 100, 5, 2, 1
 */
-#include <stdio.h> // Biblioteca padr√£o da linguagem C
+#include <stdio.h> // Biblioteca padr„o da linguagem C
 int main(void)
 {
     /* Variaveis representando as notas */
@@ -44,7 +44,7 @@ int main(void)
     aux -= iNotas100 * 100;
     /* Exibindo as notas de 100 e o valor restante */
     printf("Notas de 100: %d, valor restante: %.3f", iNotas100, aux);
-    /* Segue o mesmo processo at√© o fim */
+    /* Segue o mesmo processo atÈ o fim */
     aux /= 5.0;
     iNotas5 = (int)aux;
     aux *= 5;
