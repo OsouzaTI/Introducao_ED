@@ -1,53 +1,40 @@
 /*
-    Algorithm: Notas
+    Algorithm: Coordenadas Polares
     Author: Ozéias Souza
-    Data: 04/12/2020
-    Hours:  22:02:40
+    Data: 05/12/2020
+    Hours:  14:37:08
     Book: Introdução A Estrutura de dados com técnicas de programação em C
-    About Code: Inicialmente lemos duas notas, posteriormente
-        dependento do caso lemos mais uma
+    About Code: O programa recebe coordenadas polares e os
+        transforma para cartesianos.
     Inputs: 
-        Int -> Nota 1
-        Int -> Nota 2
-    Outputs: char** -> Nota de situação
+        float -> Raio
+        float -> Ângulo ( radianos )
+    Outputs:  
+        Float -> X
+        Float -> Y
     Observations: 
 */
 #include <stdio.h> // Biblioteca padrão da linguagem C
 #include <locale.h> // Biblioteca para mudar o padrão de caracteres
+#include <math.h> // Biblioteca padrão de matemática em C
+
 int main(void)
 {
-    setlocale(LC_ALL, "Portuguese"); // Mudando a linguagem, permitindo caracteres especiais
+    setlocale(LC_ALL,"Portuguese" ); // Mudando a linguagem, permitindo caracteres especiais
     
-    float fNota1;
-    float fNota2;
-    float fMedia;
-    printf("Digite as duas notas em sequência: ");
-    scanf("%f %f", &fNota1, &fNota2);
-    
-    fMedia = (fNota1 + fNota2) / 2;
-    /* Se a média for maior que 5, e as duas são diferentes de 3 */
-    if(fMedia > 5.0 && (fNota1 >= 3.0 && fNota2 >= 3.0)){
-        printf("Sua média foi %.2f, portanto está Aprovado!", fMedia);
-    }else{
-        float fNota3;
-        printf("É necessário uma terceira prova!!\n");
-        printf("Entre com a pontuação da prova 3: ");
-        scanf("%f", &fNota3);
+    float fRaio;
+    float fAngulo;
+    float x, y;
 
-        if((fNota2 - fNota1) < 0){
-            /* Nota 1 é maior que a nota 2 */
-            fMedia = (fNota3 + fNota1) / 2;            
-        }else{
-            /* Nota 2 é maior que a nota 1 */
-            fMedia = (fNota3 + fNota2) / 2;
-        }
-        
-        /* Média recalculada */
-        if(fMedia > 5) printf("Parabéns, foi Aprovado!");
-        else printf("Reprovado!");
+    printf("Digite o radio: ");
+    scanf("%f", &fRaio);
+    printf("Digite o angulo: ");
+    scanf("%f", &fAngulo);
 
-    }
+    x = fRaio * cosf(fAngulo);
+    y = fRaio * sinf(fAngulo);
 
+    printf("O valor no plano correspondente é (%.3f ; %.3f) ", x, y);
 
     return 0;
 }
